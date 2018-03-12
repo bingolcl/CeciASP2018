@@ -1,0 +1,43 @@
+﻿body {
+    width:100%;
+    min-height:100%;
+}
+jumbotron {
+
+}
+
+footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    background-color: #636f70;
+    color: white;
+    text-align: center;
+}
+
+.FormPaddingLeft{
+    padding-left: 20%;
+}
+
+.loginBotPadding{
+    padding-bottom:20%;
+}
+
+.homediv {
+    background-image: url('../image/beach.jpg');
+    padding-bottom:50%;
+
+}
+
+.gvBookingPadding {
+    margin-left: 65px !important;
+}
+
+.greeting {
+    background-color: lightGray;
+    color: DarkCyan;
+    text-align: center;
+    font-size: 150%;
+}

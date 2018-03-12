@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TESite.master.cs" Inherits="TravelExperts_ASP.TESite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Travel Experts</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css"
+        rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css"
+        rel="stylesheet" />
+    <link href="Styles/main.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed; width:100%; z-index:1">
+            <a class="navbar-brand" href="Home.aspx">Travel Experts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lblHome" runat="server" class="nav-link" OnClick="Home" CausesValidation="False">Home</asp:LinkButton>
+                    </li>
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtLogin" runat="server" class="nav-link" OnClick="Login" CausesValidation="False">Log In</asp:LinkButton>
+                    </li>
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtLogout" runat="server" class="nav-link" OnClick="Logout" CausesValidation="False">Log Out</asp:LinkButton>
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtRegister" runat="server" class="nav-link" OnClick="Register" CausesValidation="False">Register</asp:LinkButton>
+                    </li>
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lbtInfo" runat="server" class="nav-link" OnClick="lbtInfo_Click" CausesValidation="False">Account Info</asp:LinkButton>
+                    </li>
+                    <li class="nav-item">
+                        <asp:LinkButton ID="lblBookingHistory" runat="server" class="nav-link" OnClick="BookingHistory" CausesValidation="False">Booking History</asp:LinkButton>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+            <main>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+    </form>
+    <footer>
+        <p>
+            &copy;
+                    <asp:Label ID="lblYear" runat="server"></asp:Label>
+            Travel Experts
+        </p>
+    </footer>
+    <script src="Content/jquery.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+</body>
+</html>
